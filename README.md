@@ -1,6 +1,9 @@
 # LotteryTicketHypothesis
 
-**CONTENTS of ModularCodes FC - Fully Connected Lenet Architecture/ Conv2,Conv4,Conv6 - Scaled down variants of VGG16: **
+
+**CONTENTS of ModularCodes FC** - 
+
+Fully Connected Lenet Architecture/ Conv2,Conv4,Conv6 - Scaled down variants of VGG16: 
 
 1.Experiment_FC/Conv2/Conv4/Conv6.yaml : consists of Hyperparameters to be modified before running rest of the code
 
