@@ -1,0 +1,72 @@
+#VGG Conv4 Architecture
+                         
+seed: !!int 0                                    # random initial seed
+
+#loading_model_path: C:/Users/Priyanka-Sanjeev.BHO/PycharmProjects/CNN/models/
+#loading_model_format: .h5
+enable_gpu: !!bool false
+
+# Hyperparameter
+
+batch_size: 60
+epochs: 20
+num_classes: 10
+img_rows : 32
+img_cols : 32
+learning_rate: 0.0003
+shuffle: !!bool true
+num_of_pruning_rounds: 45
+num_trials: 5
+
+#Lenet Architecture Conv - 256,256,10 FC - 300,100,10
+neuron_units:
+  Dense1: 256 #300
+  Dense2: 256 #100
+  Output: 10
+
+
+
+# GlorotUniform (default), GlorotNormal
+optimizer: Adam
+kernel_init: GlorotNormal
+use_bias: !!bool True
+activation_function: !!str relu   # tanh
+output_activation: !!str softmax  # softmax
+
+# number of convolution & fully-connected dense parameters-
+#To be noted from the model summary (After running Conv6Model.py)
+conv1 : 1792
+conv2 : 36928
+conv3 : 73856
+conv4 : 147584
+conv5 : 295168
+conv6 : 590080
+dense1 : 1048832
+dense2 : 65792
+op_layer : 2570
+orig_sum_params : 2262602 #Sum of above layers
+
+# Early Stopping
+early_stopping: !!bool true
+monitor: val_loss
+patience: !!int 3
+min_delta: 0.001
+best_val_loss : 100
+loc_patience : 0
+
+
+#Pruning rates
+Pruning_Option1: !!str 20% from every layer
+Pruning_Option2: !!str 20% from wts from previous layer
+Max_Pruning: 0.002 # maximum pruning performed is till 0.2% of all parameters
+Pruning_rate: !!str 40% #specify overall pruning rate for plotting graphs 20%, 40%, 60%, 80%
+#Note: Pruning_rate and conv_pruning/dense_pruning/output_pruning must correspond to each other
+conv_pruning: 0.9 #(0.9-10%),(0.8-20%),(0.7-30%),(0.6-40%)
+dense_pruning: 0.8 #(0.8-20%),(0.6-40%),(0.4-60%),(0.2-80%)
+output_pruning: 0.9 #(0.9-10%),(0.8-20%),(0.7-30%),(0.6-40%)
+
+
+
+
+
+
