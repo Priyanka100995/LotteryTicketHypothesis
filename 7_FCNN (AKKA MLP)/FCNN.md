@@ -14,4 +14,4 @@ Optimizer : Adam, LR : 0.001
 
 Initializer : HeUniform
 
-Performance assesed on the base of Mean Squared Error.
+Performance assessed on the base of Mean Squared Error.
