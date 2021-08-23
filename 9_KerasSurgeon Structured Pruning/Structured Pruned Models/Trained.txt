@@ -1,0 +1,42 @@
+Magnitude_Based_Pruned_Model_0.00024652984588926277.h5
+Pruned and Trained model loss:  [0.000142529490403831, 0.996676504611969]
+
+
+Magnitude_Based_Pruned_Model_19.970002248352195.h5
+Pruned and Trained model loss:  [0.0001536430063424632, 0.9964083433151245]
+
+
+Magnitude_Based_Pruned_Model_35.946960582836.h5
+Pruned and Trained model loss:  [0.00016406468057539314, 0.9961630702018738]
+
+Magnitude_Based_Pruned_Model_46.975966298383945.h5
+Pruned and Trained model loss:  [0.00014771026326343417, 0.9965511560440063]
+
+Magnitude_Based_Pruned_Model_58.954950122081584.h5
+Pruned and Trained model loss:  [0.00015165618970058858, 0.9964673519134521]
+
+Magnitude_Based_Pruned_Model_67.13683195342361
+Pruned and Trained model loss:  [0.0001466664980398491, 0.9965739250183105]
+
+Magnitude_Based_Pruned_Model_74.1578047404731.h5
+Pruned and Trained model loss:  [0.0001795449643395841, 0.9958203434944153]
+
+Magnitude_Based_Pruned_Model_80.21376109877366.h5')
+Pruned and Trained model loss:  [0.00018486556655261666, 0.9956930875778198]
+
+Magnitude_Based_Pruned_Model_91.66216338814841.h5
+Pruned and Trained model loss:  [0.0002428456791676581, 0.9943590760231018]
+
+Magnitude_Based_Pruned_Model_96.95141192573338.h5
+Pruned and Trained model loss:  [0.0003148732066620141, 0.9926661849021912]
+
+
+Magnitude_Based_Pruned_Model_98.80935945629322.h5
+Pruned and Trained model loss:  [0.0007405054057016969, 0.9827865958213806]
+
+
+Magnitude_Based_Pruned_Model_99.40127761627333.h5
+Pruned and Trained model loss:  [0.012694821693003178, 0.7040159106254578]
+
+Magnitude_Based_Pruned_Model_94.09925883267132.h5
+Pruned and Trained model loss:  [0.0002908465685322881, 0.9932382106781006]

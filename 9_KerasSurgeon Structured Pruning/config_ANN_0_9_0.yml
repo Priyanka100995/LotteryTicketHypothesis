@@ -1,0 +1,159 @@
+# für Pythonfile: ANN_0_9_0.py
+env_name: env_aitm                                    # tf2.3
+seed: !!int 0                                    # random initial seed
+# working_directory: eh_masterarbeit
+
+# model_name (for tensorboard & model saving)
+model_name: 03_05_21_FCNN_3e_bs32_lr0.000001_Var2_gear_zeros_droprows_t8+
+# FCNN_08_1_21_20epochs_bs64_lr0,001_filter_VectLen_functional_api_weights
+
+# True: Lade trainiertes Modell (Gewichte), False: Erstelle Modell (Architektur)
+use_trained_model: !!bool true
+loading_model_name: 03_05_21_FCNN_100e_bs32_lr0.000001_Var2_gear_zeros_droprows_t7_best_checkpoint
+loading_model_path: C:/Users/Admin/PycharmProjects/FC/models/
+loading_model_format: .h5
+enable_gpu: !!bool false
+
+# Hyperparameter
+input_shape: 809
+output_shape: 1400
+batch_size: 32
+epochs: 20
+learning_rate: 0.001
+shuffle: !!bool true
+num_trials: 1
+
+
+# number of fully-connected dense parameters-
+#To be noted from the model summary
+dense1:  466560
+dense2:  258496
+dense3:  316096
+op_layer:  987000
+
+# callbacks & Early Stopping parameters
+early_stopping: !!bool true
+monitor: val_loss
+mode: min
+patience: !!int 5
+min_delta: 0
+model_checkpoint: !!bool false
+save_best_only: !!bool true
+
+#Pruning rates
+conv_pruning: 0.9 #10% pruning
+dense_pruning: 0.8 #20% pruning
+output_pruning: 0.9 #10% pruning
+
+
+# load data
+data_path: C:/Users/Admin/PycharmProjects/FC/Preprocessed_Gesamtdatensatz_Var2_skaliert_no_balancing_Splitted_data_shuffled_gear_zeros_droprows
+train:
+  nrows: 0.1 # Prozentual
+  skiprows: 0.5
+val:
+  nrows: 0.1
+  skiprows: 0.3
+test:
+  nrows: 0.1
+  skiprows: 0.2
+data_names:
+  train_samples: !!str train_samples
+  train_ground_truth: !!str train_ground_truth
+  test_samples: !!str test_samples
+  test_ground_truth: !!str test_ground_truth
+  data_format: !!str .csv  # .csv
+
+# Parameter für Architektur des Modells
+neuron_units:
+  Dense0: 576
+  Dense1: 448
+  Dense2: 704
+  Dense3: 768
+# Möglichkeiten: GlorotUniform (default), GlorotNormal, HeUniform, HeNormal
+kernel_init: HeUniform  # Xavier und Gleichverteilte Gewichte,
+use_bias: !!bool True
+bias_init: zeros
+activation_function: !!str relu   # tanh
+output_activation: !!str sigmoid  # linear (keine activation für Output)
+
+# load/save model
+# True: Speichere die Gewichte für mögliches Weitertrainieren, False: Speichere komplettes Modell (inkl. Gewichte, Architektur,..) z.B. für Embedded Hardware (Nvidia Board)
+save_weights: !!bool false
+
+# Normalization
+normalization:
+  feature_range:
+    min: !!float 0.001
+    max: !!int 1
+  target:
+    CurBat: # Batteriestrom [A]
+      Min: !!float -159.9
+      Max: !!float 498.600006
+    StEdrv: # Status Edrive
+      Min: !!int 0
+      Max: !!int 1
+    GrSt: # Gang [-]
+      Min: !!float 1
+      Max: !!float 9
+    NEng: # Drehzahl [1/s]
+      Min: !!int 0
+      Max: !!float 67.5  # Beachte: Drehzahl in 1/s -> entspricht max. 4050 1/min
+    VVeh: # Geschwindigkeit [km/h]
+      Min: !!int 0
+      Max: !!int 190
+    TqEng: # Motormoment [Nm]
+      Min: !!float -27.5
+      Max: !!int 920
+    TAry: # Zeitstützstellen [s]
+      Min: !!int 0
+      Max: !!float 6553.5  # in s
+  sample:
+    ESOC_SOC: # berechneter Ladezustand der HV-Batterie (%)
+      Min: !!float 12.8
+      Max: !!float 94.9
+    VFinVal: # Geschwindigkeit [km/h]
+      Min: !!int 0
+      Max: !!int 190
+    VSlopAFinVectLen: # Anzahl zukünfitger Ereignisse pro Zeitschritt [-]
+      Min: !!int 1
+      Max: !!int 200
+    CurbWeight: # Fahrzeug-Leergewicht [kg]
+      Min: !!int 1660
+      Max: !!int 2460
+    BMS_Batt_Volt: # Batteriespannung [V]
+      Min: !!int 0
+      Max: !!float 118.8
+    Tm_AmbAirP: # Umgebungsdruck [hPa]
+      Min: !!int 939
+      Max: !!int 1003
+    SlopFinVal: # Steigung [-] -> Prozentual
+      Min: !!float -0.098
+      Max: !!float 0.138
+    Tm_AmbAirTp: # Umgebungstemperatur [°C]
+      Min: !!int -4
+      Max: !!int 18
+    Cod_Diff_Ratio_Calc: # Übersetzung Antriebsachse [-]
+      Min: !!float 2.64
+      Max: !!float 3.46
+    MVeh: # Gesamtfahrzeugmasse [kg]
+      Min: !!int 1735
+      Max: !!int 2675
+    WhlPA_Circumfer: # Radumfang in [m]
+      Min: !!float 2.093972
+      Max: !!float 2.465921
+    AFinVal: # Beschleunigung in [m/s^2]
+      Min: !!float -4.899
+      Max: !!float 1.648
+    VSlopAFinPosn: # Position in [m]
+      Min: !!int 0
+      Max: !!int 7162
+
+# Plot predictions params
+target_names: [GrSt, NEng, T, TqEng, VVeh]
+target_units: [GrSt (-), NEng (1/s), T (s), TqEng (Nm), VVeh (km/h)]
+metrik_names: [test_loss", test_mse, test_crossentropy_loss, test_r_squared, test_accuracy]
+normalization_confusion: !!bool true
+list_names: ["NEng", "StEdrv", "VVeh", "T", "CurBat", "TqEng"]
+
+

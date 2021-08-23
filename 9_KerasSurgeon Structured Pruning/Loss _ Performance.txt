@@ -1,0 +1,108 @@
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_99.4012776
+Pruned and Trained model loss:  [0.018394708173841787, 0.5718488]
+Pruned and Trained model loss:  [0.018647746846770875, 0.5661063]
+Pruned and Trained model loss:  [0.0184659900287152, 0.57002234]
+Pruned and Trained model loss:  [0.017468856828759406, 0.59342253]
+Pruned and Trained model loss:  [0.01821410067409666, 0.5762367]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_98.80935945629322.h5
+Pruned and Trained model loss:  [0.001169574807648778, 0.97255665]
+Pruned and Trained model loss:  [0.0011881406431349278, 0.9720621]
+Pruned and Trained model loss:  [0.0011783867023167365, 0.9723733]
+Pruned and Trained model loss:  [0.001111277341408649, 0.97394943]
+Pruned and Trained model loss:  [0.0011947950352346444, 0.97198814]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_96.95141192573338.h5
+Pruned and Trained model loss:  [0.000697146991431547, 0.9836314]
+Pruned and Trained model loss:  [0.0007325043707705686, 0.9827822]
+Pruned and Trained model loss:  [0.0006836215752746805, 0.9839067]
+Pruned and Trained model loss:  [0.0006117229345717955, 0.98560214]
+Pruned and Trained model loss:  [0.0006564495741254654, 0.9826045]
+
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_94.09925883267132.h5
+Pruned and Trained model loss:  [0.000583160191235325, 0.9862142]
+Pruned and Trained model loss:  [0.0005725281729137727, 0.98648137]
+Pruned and Trained model loss:  [0.0005733267389881965, 0.98648167]
+Pruned and Trained model loss:  [0.0006016741643770053, 0.9857813]
+Pruned and Trained model loss:  [0.0005826935478963200, 0.9854321]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_91.66216338814841.h5
+Pruned and Trained model loss:  [0.0005429738580638384, 0.98719066]
+Pruned and Trained model loss:  [0.0005482350011053841, 0.98708475]
+Pruned and Trained model loss:  [0.0005609253874559748, 0.9867639]
+Pruned and Trained model loss:  [0.0005418303087064371, 0.9872518]
+Pruned and Trained model loss:  [0.0005639855642122154, 0.98678445]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_80.21376109877366.h5
+Pruned and Trained model loss:  [0.0004051687886841169, 0.9903896]
+Pruned and Trained model loss:  [0.00038371715779160053, 0.99090284]
+Pruned and Trained model loss:  [0.0003732654652703983, 0.9911611]
+Pruned and Trained model loss:  [0.00040311237054619937, 0.9904318]
+Pruned and Trained model loss:  [0.00035433645785500048, 0.9909445]
+
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_74.1578047404731.h5
+Pruned and Trained model loss:  [0.00039333392663526304, 0.9906941]
+Pruned and Trained model loss:  [0.0003532861254166666, 0.9916288]
+Pruned and Trained model loss:  [0.0003649352549177748, 0.9913537]
+Pruned and Trained model loss:  [0.0003803142542266889, 0.99099445]
+Pruned and Trained model loss:  [0.0003701145985232004, 0.99045623]
+
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_74.1578047404731.h5
+Pruned and Trained model loss:  [0.0003651592317857066, 0.9913739]
+Pruned and Trained model loss:  [0.00039415812706478353, 0.9906953]
+Pruned and Trained model loss:  [0.0003737296062920625, 0.9911317]
+Pruned and Trained model loss:  [0.00037897622421591845, 0.9910427]
+Pruned and Trained model loss:  [0.00038456664778798796, 0.99124568]
+
+Structured Pruned & Compiled Dense  Magnitude_Based_Pruned_Model_67.13683195342361.h5
+Pruned and Trained model loss:  [0.000320880610481339, 0.992362]
+Pruned and Trained model loss:  [0.00034363347143211555, 0.9918665]
+Pruned and Trained model loss:  [0.0003274089032184469, 0.9922468]
+Pruned and Trained model loss:  [0.00031563855842563486, 0.99252003]
+Pruned and Trained model loss:  [0.00033411123564653154, 0.99123598]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_58.954950122081584.h5
+Pruned and Trained model loss:  [0.00012831260391976684, 0.9970061182975769]
+Pruned and Trained model loss:  [0.0001282099838135764, 0.9970138669013977]
+Pruned and Trained model loss:  [0.00013092192239128053, 0.9969400763511658]
+Pruned and Trained model loss:  [0.00013054707960691303, 0.9969508051872253]
+Pruned and Trained model loss:  [0.00013098795465798456, 0.9969911324689588]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_46.975966298383945.h5
+Pruned and Trained model loss:  [0.00012790779874194413, 0.9970077872276306]
+Pruned and Trained model loss:  [0.00012890584184788167, 0.9969784021377563]
+Pruned and Trained model loss:  [0.00013961789645870300, 0.9968896546862132]
+Pruned and Trained model loss:  [0.00013932154621354654, 0.9978546921254896]
+Pruned and Trained model loss:  [0.00013989045464684510, 0.9968546216985465]
+
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_35.946960582836.h5
+Pruned and Trained model loss:  [0.0001729252253426239, 0.995968222618103]
+Pruned and Trained model loss:  [0.00017289489915128797, 0.9959591031074524]
+Pruned and Trained model loss:  [0.00017328876549875465, 0.9959786556220548]
+Pruned and Trained model loss:  [0.0001823284401325509, 0.995743453502655]
+Pruned and Trained model loss:  [0.00016100655193440616, 0.996248185634613]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_19.970002248352195.h5
+Pruned and Trained model loss:  [0.00017414678586646914, 0.9959284067153931]
+Pruned and Trained model loss:  [0.00017311111150775105, 0.9959508180618286]
+Pruned and Trained model loss:  [0.0001831025001592934, 0.995731770992279]
+Pruned and Trained model loss:  [0.00016779811994638294, 0.9960792660713196]
+Pruned and Trained model loss:  [0.000175579851132588006, 0.996311254785232]
+
+Structured Pruned & Compiled Dense Magnitude_Based_Pruned_Model_0.00024652984588926277.h5
+Pruned and Trained model loss:  [0.000140428586746566, 0.9967181086540222]
+Pruned and Trained model loss:  [0.00011618133430602029, 0.9972858428955078]
+Pruned and Trained model loss:  [0.000121580411235480245, 0.995846551212155]
+Pruned and Trained model loss:  [0.00011850642476929352, 0.9972369074821472]
+Pruned and Trained model loss:  [0.00014502147678285837, 0.9966186881065369]
+
+
+
+
+
+
+
