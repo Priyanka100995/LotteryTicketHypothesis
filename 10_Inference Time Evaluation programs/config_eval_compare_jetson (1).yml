@@ -1,0 +1,30 @@
+# für Pythonfile: Eval_compare_jetson.py
+env_name: env_aitm                                    # tf2.3
+seed: !!int 0                                    # random initial seed
+# working_directory: eh_masterarbeit
+
+# Settings
+# model_name (for tensorboard & model saving)
+loading_model_name: Magnitude_Based_Pruned_Model_0.00024652984588926277
+
+loading_model_path: C:/Users/Priyanka-Sanjeev.BHO/PycharmProjects/Test/Structured Pruned/
+loading_model_format: .h5
+
+# Hyperparameter
+learning_rate: 0.0001
+
+# load data
+data_path: C:/Users/Priyanka-Sanjeev.BHO/PycharmProjects/Test/Preprocessed_Gesamtdatensatz_Var2_skaliert_no_balancing_Splitted_data_shuffled_gear_zeros_droprows/
+data_names:
+  train_samples: !!str train_samples
+  train_ground_truth: !!str train_targets
+  test_samples: !!str test_samples
+  test_ground_truth: !!str test_targets
+  validation_samples: !!str val_samples
+  validation_ground_truth: !!str val_targets
+  data_format: !!str .csv  # .csv
+
+metrik_names: [test_loss", test_mse, test_crossentropy_loss, test_r_squared, test_accuracy]
+
+
+
