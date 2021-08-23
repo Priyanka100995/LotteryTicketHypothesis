@@ -1,6 +1,6 @@
 # LotteryTicketHypothesis
 
-CONTENTS of ModularCodes FC - Fully Connected Lenet Architecture/ Conv2,Conv4,Conv6 - Scaled down variants of VGG16: 
+**CONTENTS of ModularCodes FC - Fully Connected Lenet Architecture/ Conv2,Conv4,Conv6 - Scaled down variants of VGG16: **
 
 1.Experiment_FC/Conv2/Conv4/Conv6.yaml : consists of Hyperparameters to be modified before running rest of the code
 
@@ -28,7 +28,7 @@ CONTENTS of ModularCodes FC - Fully Connected Lenet Architecture/ Conv2,Conv4,Co
 
 
 
-Steps to run the LTH Experiments:
+**Steps to run the LTH Experiments:**
  
 1.Make the following changes in the .yaml file : 
 
@@ -80,7 +80,7 @@ Steps to run the LTH Experiments:
 	a.Change the path to the location of .pkl file "C:/Users/Admin/PycharmProjects/ModularCode_FC/LeNet_MNIST_history_main_Experiment.pkl"
 
 
-Example:
+**Example:**
 
 Lenet Architecture/ 20% Pruning/ 25 pruning rounds/ Num of trials-5/ Adam-GlorotNormal: 
 
